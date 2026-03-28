@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "type": "module",
+  "bin": "./cli.mjs",
+  "scripts": {
+    "init": "node cli.mjs init",
+    "dev": "node cli.mjs dev"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.1.0"
+  }
+}
