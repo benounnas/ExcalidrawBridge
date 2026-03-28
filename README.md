@@ -65,6 +65,7 @@ npm run dev
 ```
 
 Opens (ports based on your `.env`, defaults below):
+
 - Canvas: `http://localhost:5173`
 - MCP server: `http://localhost:9821/mcp`
 - WebSocket: `ws://localhost:9822`
@@ -75,15 +76,15 @@ Then go to your AI client and ask it to draw something. The diagram will appear 
 
 `npm run init` handles registration for all of these:
 
-| Editor | How |
-|--------|-----|
-| Claude Code | `claude mcp add --scope user` |
-| Claude Desktop | config JSON |
-| VS Code / Copilot | `.vscode/mcp.json` |
-| Cursor | `~/.cursor/mcp.json` |
-| Windsurf | `~/.codeium/windsurf/mcp_config.json` |
-| Codex | `~/.codex/config.toml` |
-| OpenCode | `~/.config/opencode/opencode.json` |
+| Editor            | How                                   |
+| ----------------- | ------------------------------------- |
+| Claude Code       | `claude mcp add --scope user`         |
+| Claude Desktop    | config JSON                           |
+| VS Code / Copilot | `.vscode/mcp.json`                    |
+| Cursor            | `~/.cursor/mcp.json`                  |
+| Windsurf          | `~/.codeium/windsurf/mcp_config.json` |
+| Codex             | `~/.codex/config.toml`                |
+| OpenCode          | `~/.config/opencode/opencode.json`    |
 
 ## How it works
 
@@ -104,9 +105,9 @@ The MCP server runs dual-mode: stdio for local editors, HTTP for stateless conne
 
 See the [examples gallery](examples/) for prompts you can try. Each one includes the prompt text and the resulting `.excalidraw` file.
 
-| Example | Description |
-|---------|-------------|
-| [OAuth 2.0 Flow](examples/01-oauth-flow.md) | Sequence diagram with 4 lanes and 7 steps |
+| Example                                        | Description                               |
+| ---------------------------------------------- | ----------------------------------------- |
+| [OAuth 2.0 Flow](examples/01-oauth-flow.md)    | Sequence diagram with 4 lanes and 7 steps |
 | [CI/CD Pipeline](examples/02-cicd-pipeline.md) | Left-to-right pipeline with decision loop |
 
 For best results, prepend the [Recommended Prompt](RECOMMENDED-PROMPT.md) before your drawing request. It teaches the model spacing, sizing, and layout rules that prevent overlapping elements.
